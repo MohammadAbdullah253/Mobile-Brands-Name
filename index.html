@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mobile Filter App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 50px;
+      background-color: #f0f0f0;
+    }
+    .container {
+      background-color: white;
+      max-width: 700px;
+      margin: auto;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    select, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #info {
+      margin-top: 20px;
+      background-color: #eef;
+      padding: 15px;
+      border-radius: 8px;
+      white-space: pre-wrap;
+      font-family: cursive;
+    }
+    option{
+      cursor: pointer;
+    }
+    select{
+      cursor: pointer;
+    }
+    button:hover{
+      background-color: blue;
+      color: white;
+      font-family: cursive;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Select Mobile Info</h2>
+
+  <select id="brandSelect">
+    <option value="">Select Brand</option>
+  </select>
+
+  <select id="modelSelect">
+    <option value="">Select Model</option>
+  </select>
+
+  <button onclick="showInfo()">Search</button>
+  <button onclick="refresh()">Refresh</button>
+  <div id="info"></div>
+</div>
+
+
+<script src="brand.js"></script>
+</body>
+</html>
